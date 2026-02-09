@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .numdiv {
+        margin-top: 200px;
+    }
+    .number {
+        margin-top:100px;
+        font-size: 35px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-dark">
+<p class="h1 text-light text-center">Random number generator</p>
+
+<div class="d-grid justify-content-center numdiv">
+    <form id="numbeform">
+    <p class="h5 text-light">Enter number:</p>
+    <input class="" type="number" id="maxnumber" min="2" max="10000" class="maxnum">
+    <br>
+    <button class="btn-default" type="button" id="numsubmit">Randomize</button>
+    </form>
+</div>
+<p class="text-danger text-center number" id="number"></p>
+<script src="number.js"></script>
+</body>
+</html>
