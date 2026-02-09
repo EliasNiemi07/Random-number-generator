@@ -6,7 +6,6 @@ let max = maxnum
 
 submit.addEventListener("click", function (event) {
     event.preventDefault();
-    
 
     number.textContent = "";
     randonumber = Math.floor(Math.random() * max + 1);
