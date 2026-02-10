@@ -1,19 +1,17 @@
 const maxnum = document.querySelector("#maxnumber")
 const form = document.querySelector("#numbeform")
 const submit = document.querySelector("#numsubmit")
-let number = 0;
-let max = maxnum
+
 
 submit.addEventListener("click", function (event) {
     event.preventDefault();
-
+    
+    const max = Number(maxnum.value);
     number.textContent = "";
+    between.textContent = "";
     randonumber = Math.floor(Math.random() * max + 1);
-if (maxnum === "") {
-    number.textContent = "Input a number!"
-    return;
-}
 
+between.textContent = "Rolling between 1-"+max
 number.textContent = randonumber
 
 
