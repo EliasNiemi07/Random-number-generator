@@ -11,7 +11,7 @@ submit.addEventListener("click", function (event) {
     between.textContent = "";
     randonumber = Math.floor(Math.random() * max + 1);
 
-between.textContent = "Rolling between 1-"+max
+between.textContent = "Randomizing between 1-"+max
 number.textContent = randonumber
 
 
